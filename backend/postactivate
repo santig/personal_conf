@@ -1,0 +1,8 @@
+#!/bin/bash
+# This hook is sourced after this virtualenv is activated.
+
+export APP_ENGINE=/Applications/GoogleAppEngineLauncher.app/
+export LIB_APP_ENGINE=$APP_ENGINE/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/
+export DJANGO_APP_ENGINE=$LIB_APP_ENGINE/lib/django-1.3/django/bin/
+export PYTHONPATH=$LIB_APP_ENGINE:$PYTHONPATH:$DJANGO_APP_ENGINE:$LIB_APP_ENGINE/lib/django-1.3/
+

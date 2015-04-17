@@ -1,0 +1,7 @@
+#!/bin/bash
+# This hook is sourced after this virtualenv is deactivated.
+
+unset APP_ENGINE
+unset LIB_APP_ENGINE
+unset DJANGO_APP_ENGINE
+unset PYTHONPATH
